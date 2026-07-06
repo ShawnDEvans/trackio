@@ -60,8 +60,8 @@ This will output:
 
 ### Example Analytics Output
 ```bash
-python trackio.py ~/Music/Eric\'s\ Basement/260623-204056.WAV --min-track-dur 60000 -a
-2026-07-06 14:57:41,241 - INFO - Loaded /home/shawnevans/Music/Eric's Basement/260623-204056.WAV at 48000 Hz
+python trackio.py ~/Music/260623-204056.WAV --min-track-dur 60000 -a
+2026-07-06 14:57:41,241 - INFO - Loaded /home/shawnevans/Music/260623-204056.WAV at 48000 Hz
 
 ==================================================
 AUDIO ANALYSIS REPORT
