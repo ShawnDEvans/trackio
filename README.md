@@ -58,6 +58,55 @@ This will output:
 3.  A Suggested Segmentation Threshold.
 4.  A list of proposed tracks with their start/end times and mean dB levels.
 
+### Example Analytics Output
+```bash
+python trackio.py ~/Music/Eric\'s\ Basement/260623-204056.WAV --min-track-dur 60000 -a
+2026-07-06 14:57:41,241 - INFO - Loaded /home/shawnevans/Music/Eric's Basement/260623-204056.WAV at 48000 Hz
+
+==================================================
+AUDIO ANALYSIS REPORT
+==================================================
+Sample Rate: 48000 Hz
+Duration: 5592.06 seconds
+Raw Peak Amplitude: 4.040073871612549
+Peak dBFS (Raw): 12.13 dB
+RMS dBFS (Normalized): -32.33 dB
+
+--- DB DISTRIBUTION (Relative to Peak) ---
+Bucket          | Seconds     | Percentage | Bar
+--------------------------------------------------
+-60 to -50 dB      |   1049.00s    |    18.8%     | #############
+-50 to -40 dB      |   1368.00s    |    24.5%     | #################
+-40 to -30 dB      |   1587.00s    |    28.4%     | ####################
+-30 to -20 dB      |   1221.50s    |    21.8%     | ###############
+-20 to -10 dB      |      0.00s    |     0.0%     |
+-10 to 0 dB        |      0.00s    |     0.0%     |
+
+--- SUGGESTED SEGMENTATION STRATEGY ---
+Most audio content lies in bucket: -40 to -30 dB
+Suggested Threshold for Segmentation: -35.0 dBFS
+
+--- VISUALIZATION OF SEGMENTATION ---
+Active Windows: 4296/11185 (38.4% of audio detected)
+
+--- PROPOSED TRACK LOGIC (Min Track Duration: 60000ms) ---
+Using Threshold: -35.0 dBFS
+Found 13 potential segments after merging AND duration filtering.
+Track 1: Start=52.00s, End=161.50s, Duration=109500ms, Mean dB=-25.51 dB
+Track 2: Start=429.00s, End=576.00s, Duration=147000ms, Mean dB=-27.53 dB
+Track 3: Start=658.50s, End=785.00s, Duration=126500ms, Mean dB=-28.05 dB
+Track 4: Start=914.00s, End=1007.50s, Duration=93500ms, Mean dB=-27.41 dB
+Track 5: Start=1206.50s, End=1334.50s, Duration=128000ms, Mean dB=-26.92 dB
+Track 6: Start=1431.00s, End=1547.00s, Duration=116000ms, Mean dB=-24.74 dB
+Track 7: Start=1765.00s, End=1874.00s, Duration=109000ms, Mean dB=-27.49 dB
+Track 8: Start=2008.00s, End=2193.00s, Duration=185000ms, Mean dB=-32.02 dB
+Track 9: Start=2671.00s, End=2778.50s, Duration=107500ms, Mean dB=-30.68 dB
+Track 10: Start=2966.50s, End=3041.00s, Duration=74500ms, Mean dB=-32.73 dB
+Track 11: Start=3388.00s, End=3477.00s, Duration=89000ms, Mean dB=-28.34 dB
+Track 12: Start=3732.00s, End=3840.00s, Duration=108000ms, Mean dB=-28.65 dB
+Track 13: Start=4018.00s, End=4115.50s, Duration=97500ms, Mean dB=-25.87 dB
+```
+
 ##  Configuration Parameters
 
 | Parameter | Short Flag | Default | Description |
