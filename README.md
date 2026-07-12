@@ -118,6 +118,7 @@ Track 13: Start=4018.00s, End=4115.50s, Duration=97500ms, Mean dB=-25.87 dB
 | `--min-track-dur` | | `2000` | **Min Track Duration** in ms. Segments shorter than this are discarded (filters out noise/spikes). |
 | `--merge-gap` | | `200` | **Merge Gap** in ms. If two audio segments are separated by less than this, they are merged into one track. |
 | `--min-silence-len` | `-s` | `1500` | **Min Silence Len** in ms. Minimum silence required to consider a "break" between major tracks. |
+| `--padding` | `1000` | **Add padding to the start and end of the detected tracks to help capture things like count ins or applause. |
 | `--silence-thresh` | | `None` | Override the automatic dB threshold for silence detection. Lower numbers = more sensitive (e.g., `-35`). Default is dynamic based on file peak. |
 
 ##  How It Works
