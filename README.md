@@ -5,7 +5,7 @@
 TrackIO is a Python-based audio processing utility designed to analyze long-form recordings (WAV/MP3), intelligently segment them into individual tracks based on dynamic silence detection, and apply studio-grade adaptive mastering.
 
 
-TrackIO goes beyond simple silence slicing: it normalizes amplitude anomalies, generates dB distribution histograms, merges continuous audio passages, and features a multi-stage DSP mastering pipeline capable of turning raw mixes into commercial-ready masters.
+TrackIO goes beyond simple silence slicing: it normalizes amplitude anomalies, generates dB distribution histograms, merges continuous audio passages, and features a multi-stage DSP mastering pipeline capable of turning raw mixes into auto mastered tracks.
 
 Whether digitizing vinyl and analog tapes, archiving live DJ sets and podcasts, or mastering single tracks, TrackIO provides end-to-end automated processing.
 
