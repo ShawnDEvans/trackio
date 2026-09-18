@@ -76,6 +76,20 @@ Analyze dB distribution and review proposed segmentation thresholds without gene
 python trackio.py input_file.wav -a
 ```
 
+### 4. Example output 
+The output below provides an real-world useage example. The settings worked very well against Zoom files)
+```bash
+$ ./trackio.py --prefix 'boost_' ~/Music/260819-194621.WAV --silence-thresh -39 --min-track-dur 100000 --merge-gap 1000 --padding 10000 -f mp3 --quality ultra --auto-master
+2026-09-18 11:18:56,545 - INFO - Loaded /home/Music/260819-194621.WAV at 48000 Hz
+2026-09-18 11:19:00,187 - INFO - Processing Track 1/16: silverdales_boost_260819-194621_track_001.mp3 (135500ms)
+2026-09-18 11:19:00,190 - INFO - Applying adaptive mastering suite to silverdales_boost_260819-194621_track_001.mp3...
+2026-09-18 11:19:04,462 - INFO - Exported silverdales_boost_260819-194621_track_001.mp3 (Mean dB: -25.86 dB)
+2026-09-18 11:19:04,471 - INFO - Processing Track 2/16: silverdales_boost_260819-194621_track_002.mp3 (151000ms)
+2026-09-18 11:19:04,482 - INFO - Applying adaptive mastering suite to silverdales_boost_260819-194621_track_002.mp3...
+2026-09-18 11:19:09,085 - INFO - Exported silverdales_boost_260819-194621_track_002.mp3 (Mean dB: -25.70 dB)
+...snip...
+```
+
 ---
 
 ## Analytics Mode Output Example
