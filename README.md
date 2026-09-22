@@ -11,7 +11,7 @@ Whether digitizing vinyl and analog tapes, archiving live DJ sets and podcasts, 
 
 **AI CODE WARNING**
 
-I'm lazy, in a couple of bands, and not an audio engineer. We use a Zoom recording device to capture jam sessions. This results in a single giant *.WAV file. I had no appetite for manually slicing the source audio into tracks, so I created this tool to save time and make sharing practices easier. It gets the job done! I hope you find it useful despite the use of AI code generation. 
+I'm lazy, in a couple of bands, and not an audio engineer. We use a Zoom recording device to capture jam sessions. This results in a single giant *.WAV file. I have no appetite for manually slicing the source audio into tracks, so I created this tool to save time and make sharing practices easier. It gets the job done! I hope you find it useful despite the use of AI code generation. 
 
 ---
 
